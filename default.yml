@@ -70,3 +70,7 @@ matches:
         type: date
         params:
           format: "%Y%m%d%H%M%S"
+          
+#cf creates a code fence - enclosed three `'s for Zettlr use
+  - trigger: ":cf"
+    replace: "```$|$```" 
