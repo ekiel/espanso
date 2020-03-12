@@ -51,7 +51,7 @@ matches:
     
 #new note template for your Zettlekasten
   - trigger: ":nn"  
-    replace: "# Title  \n`:date`   \nContent goes here  \n\n## Tags  \n`:mdtag`  \n\n## Links  \n"
+    replace: "# Title  \n`:date`   \nContent goes here  \n\n## Tags  \n`:mdtag`  \n\n## Links  \n\n### ID  \n:id"
 
 #time in 0H:0M notation
   - trigger: ":now"
@@ -74,3 +74,4 @@ matches:
 #cf creates a code fence - enclosed three `'s for Zettlr use
   - trigger: ":cf"
     replace: "```\n$|$\n```" 
+    
