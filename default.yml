@@ -50,8 +50,17 @@ matches:
     replace: "𝓷𝓲𝓬𝓮 ☜(ﾟヮﾟ☜)" 
     
 #new note template for your Zettlekasten
-  - trigger: ":nn"  
-    replace: "# Title  \n`:date`   \nContent goes here  \n\n## Tags  \n`:mdtag`  \n\n## Links  \n\n### ID  \n:id"
+  - trigger: ":nn" 
+    replace: "# Title\n{{date}}  \nContent goes here\n\n## Tags\n\n## Links \n\n### ID\n{{id}}" 
+    vars:
+      - name: date
+        type: match
+        params:
+          trigger: ":date"
+      - name: id
+        type: match
+        params:
+          trigger: ":id"
 
 #time in 0H:0M notation
   - trigger: ":now"
