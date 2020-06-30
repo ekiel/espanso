@@ -29,6 +29,14 @@ matches:
         params:
           format: "%Y-%m-%d"
 
+  - trigger: ":bd"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%F"
+
   # Shell commands
   - trigger: ":shell"
     replace: "{{output}}"
@@ -42,11 +50,15 @@ matches:
 
 #:mdtag is used to quickly create a tag notation for Zettlekasten in code blocks.
   - trigger: ":mdtag"
+<<<<<<< HEAD
     replace: "`#$|$`  "
+=======
+    replace: "`#$|$`"
+>>>>>>> 1f96044f41806aa2ae7d8e2ed23acee50906183c
 
 #:t is a short version of mdtag
   - trigger: ":t"
-    replace: "`#$|$`  "
+    replace: "`#$|$`"
 
 #fun stuff
   - trigger: ":dance"
@@ -58,6 +70,7 @@ matches:
   - trigger: ":nice"
     replace: "𝓷𝓲𝓬𝓮 ☜(ﾟヮﾟ☜)"
 
+<<<<<<< HEAD
   - trigger: ":dwi"
     replace: "(⌐■_■)"
 
@@ -97,6 +110,11 @@ matches:
 #new note template for your Zettlekasten
   - trigger: ":nn"
     replace: "# Title\n{{date}}\n## Tags\n\n## Links \n\n### ID\n{{id}}"
+=======
+#new note template for your Zettlekasten
+  - trigger: ":nn"
+    replace: "# Title\n{{date}}  \nContent goes here\n\n## Tags\n\n## Links \n\n### ID\n{{id}}"
+>>>>>>> 1f96044f41806aa2ae7d8e2ed23acee50906183c
     vars:
       - name: date
         type: match
@@ -125,6 +143,10 @@ matches:
         params:
           format: "%Y%m%d%H%M%S"
 
+<<<<<<< HEAD
 #cf creates a code fence - enclosed three `'s
+=======
+#cf creates a code fence - enclosed three `'s for Zettlr use
+>>>>>>> 1f96044f41806aa2ae7d8e2ed23acee50906183c
   - trigger: ":cf"
     replace: "```\n$|$\n```"
