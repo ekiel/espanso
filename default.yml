@@ -18,7 +18,16 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%m/%d/%Y"
+          format: "%m-%d-%Y"
+
+  # Dates
+  - trigger: ":ymd"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
 
   # Shell commands
   - trigger: ":shell"
@@ -29,29 +38,65 @@ matches:
         params:
           cmd: "echo Hello from your shell"
 
-# Custom Replacements        
+# Custom Replacements
 
-#:mdtag is used to quickly create a tag notation for Zettlekasten in code blocks.  
+#:mdtag is used to quickly create a tag notation for Zettlekasten in code blocks.
   - trigger: ":mdtag"
     replace: "`#$|$`  "
-    
-#:t is a short version of mdtag   
+
+#:t is a short version of mdtag
   - trigger: ":t"
     replace: "`#$|$`  "
 
 #fun stuff
   - trigger: ":dance"
     replace: "`ᕕ(⌐■_■)ᕗ ♪♬`"
-    
-  - trigger: ":flip"  
+
+  - trigger: ":flip"
     replace: "`(╯°□°）╯︵ ┻━┻`"
-    
+
   - trigger: ":nice"
-    replace: "𝓷𝓲𝓬𝓮 ☜(ﾟヮﾟ☜)" 
-    
+    replace: "𝓷𝓲𝓬𝓮 ☜(ﾟヮﾟ☜)"
+
+  - trigger: ":dwi"
+    replace: "(⌐■_■)"
+
+  - trigger: ":hg"
+    replace: "ᕕ( ᐛ )ᕗ"
+
+  - trigger: ":eh"
+    replace: "‽"
+
+  - trigger: ":loading"
+    replace: "███▒▒▒▒▒▒▒"
+
+  - trigger: ":lol"
+    replace: "L(° O °L)"
+
+  - trigger: ":nerd"
+    replace: "(⌐⊙_⊙)"
+
+  - trigger: ":nuke"
+    replace: "☢"
+
+  - trigger: ":smile"
+    replace: "ツ"
+
+  - trigger: ":smirk"
+    replace: "¬‿¬"
+
+  - trigger: ":this"
+    replace: "( ͡° ͜ʖ ͡°)_/¯"
+
+  - trigger: ":derp"
+    replace: "☉ ‿ ⚆"
+
+  - trigger: ":cloud"
+    replace: "☁"
+
 #new note template for your Zettlekasten
-  - trigger: ":nn" 
-    replace: "# Title\n{{date}}  \nContent goes here\n\n## Tags\n\n## Links \n\n### ID\n{{id}}" 
+  - trigger: ":nn"
+    replace: "# Title\n{{date}}\n## Tags\n\n## Links \n\n### ID\n{{id}}"
     vars:
       - name: date
         type: match
@@ -69,9 +114,9 @@ matches:
       - name: time
         type: date
         params:
-          format: "%R"
+          format: "%l:%M %p"
 
-#id creates a timestamp for unique ids in notes like Zettlr - handy for other apps that don't include that functionality          
+#id creates a timestamp for unique ids in notes like Zettlr - handy for other apps that don't include that functionality
   - trigger: ":id"
     replace: "{{time}}  "
     vars:
@@ -79,8 +124,7 @@ matches:
         type: date
         params:
           format: "%Y%m%d%H%M%S"
-          
-#cf creates a code fence - enclosed three `'s for Zettlr use
+
+#cf creates a code fence - enclosed three `'s
   - trigger: ":cf"
-    replace: "```\n$|$\n```" 
-    
+    replace: "```\n$|$\n```"
