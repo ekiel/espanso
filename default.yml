@@ -94,6 +94,72 @@ matches:
   - trigger: ":cloud"
     replace: "☁"
 
+  - trigger: ":crayon"
+    replace: "''((̲̅ ̲̅(̲̅C̲̅r̲̅a̲̅y̲̅o̲̅l̲̲̅̅a̲̅( ̲̅((>''"
+
+  - trigger: ":boombox"
+    replace: "''♫♪.ılılıll|̲̅̅●̲̅̅|̲̅̅=̲̅̅|̲̅̅●̲̅̅|llılılı.♫♪''"
+
+  - trigger: ":coffee"
+    replace: "'c[_]''"
+
+  - trigger: ":cassette"
+    replace: "|[●▪▪●]|"
+
+  - trigger: ":robot"
+    replace: "'c[○┬●]כ'"
+
+  - trigger: ":loveeyes"
+    replace: "(♥_♥)"
+
+  - trigger: ":happybirthday"
+    replace: "ዞᏜ℘℘Ꮍ ℬℹℛʈዞᗬᏜᎽ"
+
+  - trigger: ":bs"
+    replace: "|3ᵕᶦᶦᶳᶣᶨᶵ"
+
+  - trigger: ":happysquare"
+    replace: "【ツ】"
+
+  - trigger: ":plane"
+    replace: "✈"
+
+  - trigger: ":punch"
+    replace: "O=('-'Q)"
+
+  - trigger: ":what"
+    replace: "ლ(ಠ益ಠლ)╯"
+
+  - trigger: ":seewhatyoudid"
+    replace: "☚ (<‿<)☚"
+
+  - trigger: ":fancylol"
+    replace: "[]_ ([]) []_"
+
+  - trigger: ":omgwhat"
+    replace: "◕_◕"
+
+  - trigger: ":squid"
+    replace: "くコ:彡"
+
+  - trigger: ":yolo"
+    replace: "Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ"
+
+  - trigger: ":911"
+    replace: "✈__✈ █ █ ▄ "
+
+  - trigger: ":m1"
+    replace: ",.-~*´¨¯¨`*·~-.¸-($|$)-,.-~*´¨¯¨`*·~-.¸"
+
+  - trigger: ":m2"
+    replace: "(¯`·._.·(¯`·._.· $|$ ·._.·´¯)·._.·´¯)"
+
+  - trigger: ":m3"
+    replace: "(¯`·._.··¸.-~*´¨¯¨`*·~-.,-($|$)-,.-~*´¨¯¨`*·~-.¸··._.·´¯)"
+
+  - trigger: ":m4"
+    replace: "(¯`·._.·(¯`·._.·(¯`·._.· $|$ ·._.·´¯)·._.·´¯)·._.·´¯)"
+
 #new note template for your Zettlekasten
   - trigger: ":nn"
     replace: "# Title\n{{date}}\n## Tags\n\n## Links \n\n### ID\n{{id}}"
