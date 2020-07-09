@@ -173,6 +173,19 @@ matches:
         params:
           trigger: ":id"
 
+  - trigger: ":nz"
+    replace: "-----------------  \nid: {{id}}  \ntitle: $|$  \ndate: {{date}}  \ntags: [this, that]  \nlinks: [[]]  \n\n-----------------
+"
+    vars:
+      - name: date
+        type: match
+        params:
+          trigger: ":date"
+      - name: id
+        type: match
+        params:
+          trigger: ":id"
+
 #time in 0H:0M notation
   - trigger: ":now"
     replace: "{{time}}  "
