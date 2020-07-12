@@ -174,7 +174,7 @@ matches:
           trigger: ":id"
 
   - trigger: ":nz"
-    replace: "---\nid: {{id}}\ntitle: $|$\ndate: {{date}}\ntags: []\nlinks: [[]]\n---"
+    replace: "---\nid: {{id}}\ntitle: $|$\ndate: {{date}}\ntags: []\nlinks: [[]]\n---\n"
     vars:
       - name: date
         type: match
